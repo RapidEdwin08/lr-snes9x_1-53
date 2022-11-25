@@ -14,6 +14,7 @@ cd ~/lr-snes9x_1-53 && ./lr-snes9x_setup.sh
 ```
 
 ## Sources
+https://www.snes9x.com/
 https://github.com/RetroPie/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-snes9x.sh
 
 ## License
