@@ -21,11 +21,11 @@ echo ""
 )
 
 # Confirm installSNESflag
-installSNESflag=$(dialog --stdout --no-collapse --title "   *DISCLAIMER* Install at your own Risk   " \
+installSNESflag=$(dialog --no-collapse --title "   *DISCLAIMER* Install at your own Risk   " \
 	--ok-label OK --cancel-label Exit \
 	--menu "$snesREF"  25 75 20 \
 	1 " [INSTALL]  lr-snes9x v1.53" \
-	2 " [REMOVE]  lr-snes9x v1.53" )
+	2 " [REMOVE]  lr-snes9x v1.53" 2>&1>/dev/tty)
 	
 # installSNESflag Confirmed - Otherwise Exit
 if [ "$installSNESflag" == '1' ]; then
